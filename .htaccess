@@ -1,0 +1,23 @@
+# Only allow direct access to specific Web-available files.
+
+# Akismet CSS and JS
+<FilesMatch "^(form\.js|akismet\.js|akismet\.css)$">
+	<IfModule !mod_authz_core.c>
+		Allow from all
+	</IfModule>
+	
+	<IfModule mod_authz_core.c>
+		Require all granted
+	</IfModule>
+</FilesMatch>
+
+# Akismet images
+<FilesMatch "^logo-(a|full)-2x\.png$">
+	<IfModule !mod_authz_core.c>
+		Allow from all
+	</IfModule>
+	
+	<IfModule mod_authz_core.c>
+		Require all granted
+	</IfModule>
+</FilesMatch>
