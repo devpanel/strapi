@@ -1,3 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^(.*)  http://localhost:1337/$1 [P]
+
+
 # Only allow direct access to specific Web-available files.
 
 # Akismet CSS and JS
