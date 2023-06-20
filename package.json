@@ -16,7 +16,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "start prod": "strapi build && strapi start",
+    "start_prod": "strapi build && strapi start",
     "strapi": "strapi"
   },
   "devDependencies": {},
