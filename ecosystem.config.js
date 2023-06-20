@@ -3,7 +3,7 @@ module.exports = {
         {
           name: 'app',
           script: 'npm',
-          args: 'start prod',
+          args: 'run start_prod',
           env: {
             NODE_ENV: "production"
           }
